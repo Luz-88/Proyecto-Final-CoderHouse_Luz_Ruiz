@@ -114,9 +114,71 @@ informacion actualizada.
 
 ![image](https://github.com/Luz-88/Proyecto-Final-CoderHouse_Luz_Ruiz/assets/164443777/41e2def0-b797-438f-8980-e769558c2ebf)
 
+>QUERIES A EJECUTAR
+
+A continuacion se describe un grupo de queries que involucran diferentes
+objetos dentro de la base de datos, y resultan utiles para la gestión de informacion y manejo de
+datos en DENTISALUD.
+
+*Vistas:*
+1. vista_citas_atendidas: Esta vista muestra las citas atendidas por pacientes, desde la mas reciente
+a la mas antigua e indica el profesional que la atendio.
+Las tablas utilizadas para generar esta vista son las siguientes: citas, pacientes, odontologos.
+
+2. vista_horarios_inactivos: Las agendas pueden tener mas de un horario configurado y algunos
+podrían estar inactivos,
+esta vista facilita la visualización de los horarios inactivos que podrían existir dentro de una agenda
+determinada.
+
+3. vista_atenciones_medico: Esta vista muestra las citas atendidas por un medico desde la fecha
+mas actual a la mas antigua.
+Las tablas utilizadas para generar esta vista son las siguientes: horarios, agendas
 
 
+*Funciones:*
 
+1. f_citas_atendidas_por_servicio: esta funcion indicas la cantidad de citas atendidas en un rango de
+fechas para un determinado servicio, Si no existen citas para el rango y servicio ingresado, esta
+funcion retornara un mensaje de error indicando que hay 0 citas para ese conjunto de datos. Las
+tablas interviniestes son: citas, horarios, agendas y servicios.
+
+2. f_citas_atendidas_paciente: esta funcion indicas la cantidad de veces que ha sido 'Atendido' un
+paciente y asi controlar sus atenciones, como tambien cuando este no ha sido atendido, Las tablas
+interviniestes son: pacientes, y cias.
+
+3. f_horarios_disponibles_agendas: esta funcion muestra los horarios disponibles o activos dentro de
+una desterminada agenda,
+en caso de que no existan horarios activos, retorna la informacion de que no existen horarios para esa
+agenda. Las tablas interviniestes son: horarios, y cias.
+
+*Stored Procedures:*
+
+1. sp_crear_nuevo_paciente: el siguiente sp permite crear nuevos pacientes, ingresando los datos del
+mismo. Las tablas interviniestes son: pacientes.
+
+2. sp_cambiar_estado_cita: el siguiente permite cambiar el estado de una cita y si se ingresa un
+balor incorrecto o nullo, este genera un error indicando que es un valor incorrecto. Las tablas
+interviniestes son: pacientes.
+
+3. sp_buscar_paciente: el siguiente sp permite buscar a un paciente por numero de documento, si el
+documento no existe indicara un error. Las tablas interviniestes son: pacientes
+
+*Triggers:*
+1. registro_cambios_agenda: este trigguer registra los cambios reliados en el estado de las agendas,
+esta puede estar activa (1) o inactiva (0), los cambios realizados se registraran en la tabla
+registro_cambios_agenda, registrando la fecha del cambio,
+el estado anterior y el estado actual.
+Tablas intervinientes : agendas y registro_cambios_agenda
+
+3. validar_fecha_nacimiento: el siguiente trigger valida que al crearse un nuevo registro en la tabla
+pacientes, la fehca de nacimiento no sea mayor a la fecha actual,
+si esto sucese se generar un mensaje de error y evita la insercion del registro. Interviene solo la tabla
+pacientes.
+
+4. evitar_eliminar_pacientes_con_citas: el siguiente trigger evita que se elimine el registro de un
+paciente si este tiene citas relacionadas, si se intenta eliminar un paciente con citas,
+se genera un mensaje de error y evita que se elimine el registro. Las tablas intervinientes son las
+tablas pacientes y citas
 
 
 ---
