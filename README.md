@@ -84,27 +84,6 @@ personales, nombre completo, fecha de nacimiento, numero de identificación, y a
 conservar la fecha de registro y la ultima actualizacion de datos, para contar con
 informacion actualizada.
 
-
-### **Consignas:**
-- La base de datos debe contener al menos:
-    * ~ 15 tablas, entre las cuales debe haber al menos 1 tabla de hechos,  2 tablas transaccionales.
-    * ~ 5 vistas.
-    * ~ 2 stored procedure.
-    * ~ 2  trigger.
-    * ~ 2 funciones
-    
-- El documento debe contener:
-    - Introducción
-    - Objetivo
-    - Situación problemática
-    - Modelo de negocio
-    - Diagrama de entidad relació
-    - Listado de tablas con descripción de estructura (columna,descripción, tipo de datos, tipo de clave)
-    - Scripts de creación de cada objeto de la base de datos
-    - Scripts de inserción de datos
-    - Informes generados en base a la información de la base
-    - Herramientas y tecnologías usadas
-
 >DICCIONARIO DE DATOS
 
 ![image](https://github.com/Luz-88/Proyecto-Final-CoderHouse_Luz_Ruiz/assets/164443777/045309b3-b440-49e1-b485-ad15b284144e)
