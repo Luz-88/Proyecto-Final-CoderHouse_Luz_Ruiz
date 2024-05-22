@@ -1,4 +1,4 @@
--- Insercion de datos mediante codigo:
+--- Insercion de datos mediante codigo:
 
 USE gestion_citas_dentisalud;
 
