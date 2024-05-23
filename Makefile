@@ -61,6 +61,3 @@ clean-db:
 	@echo "Bye"
 	docker compose -f $(DOCKER_COMPOSE_FILE) down
 
-test-db:
-    make test-db # Este es el comando que quieres ejecutar
-
