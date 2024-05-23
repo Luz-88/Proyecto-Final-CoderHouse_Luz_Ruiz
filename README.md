@@ -175,7 +175,7 @@ __MySQL Workbench:__ Como herramienta principal mediante la cual realizamos toda
 
 __Windows PowerShell:__ Donde pudimos explorar en aspectos mas tecnicos, y vrealizar algunas practicas mediante la ejecución de comandos basicos.
 
-__GitHub:__Como herramienta de compilacion y entrega del proyeto final a fin de generarlo en un entorno profesional y eficiente, brindando conocimiento extra, una opcion de gran utilidad para contar con un protafolio profesional a futuro. 
+__GitHub:__ Como herramienta de compilacion y entrega del proyeto final a fin de generarlo en un entorno profesional y eficiente, brindando conocimiento extra, una opcion de gran utilidad para contar con un protafolio profesional a futuro. 
 
 #### Pasos para arrancar el proyecto
 
