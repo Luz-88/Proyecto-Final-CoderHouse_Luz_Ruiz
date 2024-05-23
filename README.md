@@ -162,28 +162,20 @@ tablas pacientes y citas
 
 ---
 
-## Tematica del proyecto
+__Herramientas y tecnologías usadas__
 
-## Modelo de negocio
+Acontinuacion se detalla las herramientas y tecnologías utilizadas durante el desarrollo del proyecto, el cual fue creado para la geston de agendas de un pequeño centro de atención odontologica.
 
-## Diagrama entidad relacion (DER)
+__Coder House Plataforma y Docente:__
+El curso proporcionó una base sólida de conocimientos en el diseño y desarrollo de bases de datos mysq, y en apoyo del nuestro docente sumado a todo el material didactico y visual compartidos, fueron de vital importancia para el desarrollo y finalixzación del proyecto.
 
-## Listado de tablas y descripcion
+__Tutores CoderHouse:__ En su acompañamiento constante y aclaraciones en el momento preciso, brindaron orientación y apoyo en la resolución de problemas.
 
-## Estructura e ingesta de datos
+__MySQL Workbench:__ Como herramienta principal mediante la cual realizamos todas nuestras practicas y entregas solicitadas a lo largo del curso.
 
-## Objetos de la base de datos
+__Windows PowerShell:__ Donde pudimos explorar en aspectos mas tecnicos, y vrealizar algunas practicas mediante la ejecución de comandos basicos.
 
-## Roles y permisos
-
-## Back up de la base de datos
-
-## Herramientas y tecnologias usadas
-
-## Como levantar el proyecto en CodeSpaces GitHub
-* env: Archivo con contraseñas y data secretas
-* Makefile: Abstracción de creacción del proyecto
-* docker-compose.yml: Permite generar las bases de datos en forma de contenedores
+__GitHub__Como herramienta de compilacion y entrega del proyeto final a fin de generarlo en un entorno profesional y eficiente, brindando conocimiento extra, una opcion de gran utilidad para contar con un protafolio profesional a futuro. 
 
 #### Pasos para arrancar el proyecto
 
