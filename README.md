@@ -162,11 +162,11 @@ tablas pacientes y citas
 
 *Usuarios y Roles:*
 
-Los diferentes usuarios se dividen según su categoria de usuarios y sus roles van definidos en relación a cada perfil de usuario, a continuación se detallan los usuarios con sus diferentes roles.
+Los diferentes usuarios se dividen según su categoria de usuarios y sus roles van definidos en función de sus roles dentro del centro odotologico, a continuación se detallan los usuarios con sus diferentes roles.
 
-*'admision' Usuario admisionista quien se encarga de gestionar las agendas y las citas, por lo que sus rol de 'gestion_agendas' le permitira las siguientes acciones sobre todas las tablas de la BBDD gestion_citas_dentisalud*
-*'medico' Usuario médico quienes mediante rol 'visor_agendas' contaran con acceso a visualizaciones de las diferentes tablas de la BBDD gestion_citas_dentisalud*
-*'superusuario' Usuario administrador de sistemas, los usuarios con el rol 'administrador_bbdd' tendran acceso a todas las tablas y objetos relaionados a la BBDD gestion_citas_dentisalud*
+*1. 'admision' Usuario admisionista quien se encarga de gestionar las agendas y las citas, por lo que sus rol de 'gestion_agendas' le permitira las siguientes acciones sobre todas las tablas de la BBDD gestion_citas_dentisalud*
+*2. 'medico' Usuario médico quienes mediante rol 'visor_agendas' contaran con acceso a visualizaciones de las diferentes tablas de la BBDD gestion_citas_dentisalud*
+*3. 'superusuario' Usuario administrador de sistemas, los usuarios con el rol 'administrador_bbdd' tendran acceso a todas las tablas y objetos relaionados a la BBDD gestion_citas_dentisalud*
 
 ---
 
