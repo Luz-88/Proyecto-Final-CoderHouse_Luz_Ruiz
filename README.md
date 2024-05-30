@@ -27,6 +27,7 @@
 _______________________________________________________________________________________________________________________________________________________________________________________________________
 
 > Descripción del Proyecto:
+
 El Centro Odontologico Dentisalud requiere una base de datos para el
 registro y gestion de citas diarias, que pueda almacenar informacion general
 de sus pacientes, tal como datos personales, Obra Social, turnos otorgados, y
