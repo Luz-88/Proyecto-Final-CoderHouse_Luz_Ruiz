@@ -1,7 +1,3 @@
-
-/* vista_citas_atendidas: Esta vista muestra las citas atendidas por pacientes, desde la mas reciente a la mas antigua e indica el profesional que la atendio.
-Las tablas utilizadas para generar esta vista son las siguientes: citas, pacientes, odontologos*/
-
 USE gestion_citas_dentisalud;
 
 CREATE VIEW vista_citas_atendidas AS
@@ -23,13 +19,6 @@ CREATE VIEW vista_citas_atendidas AS
         c.estado_progreso = 'Atendido'
     ORDER BY fecha_programada DESC;
 
--- SELECT * 
--- FROM vista_citas_atendidas;
-
-/* vista_horarios_inactivos: Las agendas pueden tener mas de un horario configurado y algunos podrían estar inactivos, 
-esta vista facilita la visualización de los horarios inactivos que podrían existir dentro de una agenda determinada.
-Las tablas utilizadas para generar esta vista son las siguientes: horarios, agendas */
-
 CREATE VIEW vista_horarios_inactivos AS
     SELECT 
         a.descripcion AS agenda,
@@ -44,17 +33,9 @@ CREATE VIEW vista_horarios_inactivos AS
     WHERE
         h.estado_horario = 0;
 
--- SELECT * 
--- FROM vista_horarios_inactivos;
-
-/* vista_atenciones_medico: Esta vista muestra las citas atendidas por un medico desde la fecha mas actual a la mas antigua.
-Las tablas utilizadas para generar esta vista son las siguientes: horarios, agendas */
-
 CREATE VIEW vista_atenciones_medico AS
 SELECT 
-  --  o.apellido, 
-   -- o.nombre, 
-	CONCAT(o.nombre, ' ', apellido) AS nombre_medico,
+ 	CONCAT(o.nombre, ' ', apellido) AS nombre_medico,
     COUNT(c.id_cita_pk) AS total_atenciones,
     MAX(c.fecha_programada) AS Fecha_cita,
     ag.descripcion AS descripcion_agenda
@@ -68,6 +49,3 @@ WHERE c.estado_progreso = 'Atendido'
 GROUP BY 
     o.apellido, o.nombre, ag.descripcion
 ORDER BY fecha_cita DESC;
-
--- SELECT * 
--- FROM vista_atenciones_medico;
