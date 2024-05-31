@@ -1,3 +1,5 @@
+USE gestion_citas_dentisalud;
+
 DROP TABLE IF EXISTS registro_cambios_agenda;
 CREATE TABLE registro_cambios_agenda (
     id_registro INT AUTO_INCREMENT PRIMARY KEY,
