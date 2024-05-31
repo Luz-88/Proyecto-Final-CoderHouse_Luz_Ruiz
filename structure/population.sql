@@ -1,8 +1,4 @@
---- Insercion de datos mediante codigo:
-
 USE gestion_citas_dentisalud;
-
--- Insercion tabla Odontologos:
 
 INSERT INTO gestion_citas_dentisalud.odontologos (id_odontologo, apellido, nombre, nacionalidad, tipo_doc, nro_doc, matricula, email, fecha_registro, fecha_ult_act)
 VALUES 
@@ -15,8 +11,6 @@ VALUES
 SELECT *
 FROM odontologos;
 
--- Insercion en tabla agendas:
-
 INSERT INTO gestion_citas_dentisalud.agendas (id_agenda_pk, id_odontologo, descripcion, fecha_desde, fecha_hasta, estado)
 VALUES
 (1, 1, 'Ortodoncia dra. Maria Martinez', '2024-04-15', '2025-04-15', 1),
@@ -28,8 +22,6 @@ VALUES
 SELECT *
 FROM agendas;
 
--- Insercion en tabla Servicios:
-
 INSERT INTO gestion_citas_dentisalud.servicios (id_servicio_pk, descripcio_serv)
 VALUES
 (1, 'Ortodoncia'),
@@ -40,8 +32,6 @@ VALUES
 SELECT *
 FROM servicios;
 
--- Insercion en tabla tipo_consulta:
-
 INSERT INTO gestion_citas_dentisalud.tipo_consulta (tconsulta_pk, tipo_consulta)
 VALUES
 (1, 'Primera Consulta'),
@@ -49,8 +39,6 @@ VALUES
 
 SELECT *
 FROM tipo_consulta;
-
--- Insercion en tabla consultorios:
 
 INSERT INTO gestion_citas_dentisalud.consultorios (consultorio_pk, id_servicio_pk, descripcion, estado)
 VALUES
@@ -61,8 +49,6 @@ VALUES
 
 SELECT *
 FROM consultorios;
-
--- Insercion en tabla horario:
 
 INSERT INTO horarios (id_horarios_pk, id_agenda_pk, dias_semana, hora_desde, hora_hasta, duracion, id_servicio_pk, tconsulta_pk, consultorio_pk, estado_horario)
 VALUES
@@ -82,7 +68,6 @@ VALUES
 SELECT *
 FROM horarios;
 
--- Insercion en tabla pacientes:
 INSERT INTO pacientes (id_paciente_pk, apellido_pac, nombre_pac, nacionalidad_pac, tipo_doc_pac, nro_documento, fecha_nac, sexo_pac, email_pac, telf, obra_social, plan, nro_credencial)
 VALUES
 (1, 'González', 'Lucía', 'Argentina', 'DNI', 12345678, '1980-05-15', 'Femenino', 'lucia@email.com', 112334455 , 'OSDE', 'Plan 210', 123456789),
@@ -98,8 +83,6 @@ VALUES
 
 SELECT *
 FROM PACIENTES;
-
--- Insercion en tabla citas:
 
 INSERT INTO citas (id_paciente_pk, id_odontologo, id_agenda_pk, id_horarios_pk, fecha_programada, hora_inicio, hora_fin, estado_progreso)
 VALUES
