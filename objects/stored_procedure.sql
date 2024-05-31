@@ -30,7 +30,7 @@ BEGIN
 END //
 DELIMITER ;
 
-DROP PROCEDURE IF EXISTS sp_cambiar_estado_cita
+DROP PROCEDURE IF EXISTS sp_cambiar_estado_cita;
 DELIMITER //
 CREATE PROCEDURE sp_cambiar_estado_cita(
     IN p_id_cita INT,
