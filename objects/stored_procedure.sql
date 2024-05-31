@@ -1,6 +1,6 @@
 USE gestion_citas_dentisalud;
 
-DROP PROCEDURE IF EXISTS sp_crear_nuevo_paciente
+DROP PROCEDURE IF EXISTS sp_crear_nuevo_paciente;
 DELIMITER //
 CREATE PROCEDURE sp_crear_nuevo_paciente(
     IN p_apellido VARCHAR(100),
