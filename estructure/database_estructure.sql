@@ -2,7 +2,7 @@ DROP SCHEMA IF EXISTS gestion_citas_dentisalud;
 DROP DATABASE IF EXISTS gestion_citas_dentisalud;
 CREATE DATABASE gestion_citas_dentisalud;
 
-USE Gestion_citas_dentisalud; 
+USE gestion_citas_dentisalud; 
 
 CREATE TABLE odontologos (
 id_odontologo INT PRIMARY KEY AUTO_INCREMENT,
