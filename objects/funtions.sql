@@ -1,3 +1,5 @@
+USE gestion_citas_dentisalud;
+
 DROP FUNCTION  IF EXISTS f_citas_atendidas_por_servicio;
 DELIMITER //
 CREATE FUNCTION f_citas_atendidas_por_servicio(
