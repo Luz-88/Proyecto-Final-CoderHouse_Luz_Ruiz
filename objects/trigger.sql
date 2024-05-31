@@ -17,8 +17,7 @@ FOR EACH ROW
 BEGIN
    
     IF OLD.estado <> NEW.estado THEN
-        -- Insertar en la tabla de registro de cambios
-        INSERT INTO registro_cambios_agenda (fecha_cambio, hora_cambio, id_agenda_pk, descripcion_agenda, estado_anterior, estado_actual)
+               INSERT INTO registro_cambios_agenda (fecha_cambio, hora_cambio, id_agenda_pk, descripcion_agenda, estado_anterior, estado_actual)
         VALUES (CURDATE(), CURTIME(), NEW.id_agenda_pk, NEW.descripcion, OLD.estado, NEW.estado);
     END IF;
 END //
