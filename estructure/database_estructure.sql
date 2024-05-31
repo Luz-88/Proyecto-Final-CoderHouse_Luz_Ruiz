@@ -1,5 +1,6 @@
-DROP DATABASE IF EXISTS Gestion_citas_dentisalud;
-CREATE DATABASE Gestion_citas_dentisalud;
+DROP SCHEMA IF EXISTS gestion_citas_dentisalud;
+DROP DATABASE IF EXISTS gestion_citas_dentisalud;
+CREATE DATABASE gestion_citas_dentisalud;
 
 USE Gestion_citas_dentisalud; 
 
