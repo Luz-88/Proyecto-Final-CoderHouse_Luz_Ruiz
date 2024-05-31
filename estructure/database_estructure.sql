@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS Gestion_citas_dentisalud;
 CREATE DATABASE Gestion_citas_dentisalud;
 
